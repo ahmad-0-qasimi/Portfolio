@@ -1,33 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Login Page</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmad Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <div class="login-container">
-    <div class="logo">
-      <img src= pfp.jpg alt="Logo">
+<body class="bg-black text-white">  <!-- Navigation -->  <nav class="w-full fixed top-0 left-0 bg-black z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-white text-2xl font-semibold">Port<span class="text-red-500 font-bold">filto</span></h1>
+      <ul class="flex space-x-4 text-gray-300">
+        <li><a href="index.html" class="hover:text-red-400">Home</a></li>
+        <li><a href="projects.html" class="hover:text-red-400">Projects</a></li>
+      </ul>
     </div>
-    <h2>Login to the Future!</h2>
-    <p> </p>
-    <form>
-      <div class="input-group">
-        <input type="text" placeholder="Username" required />
+  </nav>  <!-- Home Page -->  <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-24">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div class="relative w-full flex justify-center">
+        <div class="w-72 h-72 rounded-full overflow-hidden bg-red-600 animate-pulse">
+          <img src="profile.jpg" alt="Ahmad" class="w-full h-full object-cover mix-blend-multiply">
+        </div>
       </div>
-      <div class="input-group">
-        <input type="password" placeholder="Password" required />
+      <div class="space-y-5 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold">Hi, It's <span class="text-red-500">Me</span></h1>
+        <p class="text-gray-400 max-w-md mx-auto md:mx-0">Ahmad Qasimi, born on June 7, 2009. A creative guy with a passion for turning ideas into reality, I specialize in photo and video editing, and if you ever want to know my mood—just check my playlist!</p>
+        <div class="flex justify-center md:justify-start space-x-4 mt-4">
+          <!-- Facebook -->
+          <a href="https://facebook.com/ahmadjan.qasimi.71" target="_blank" aria-label="Facebook" class="hover:text-red-400 transition">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35C.597 0 0 .597 0 1.325v21.351C0 23.403.597 24 1.325 24h11.495V14.709h-3.13v-3.62h3.13V8.413c0-3.1 1.893-4.788 4.658-4.788 1.325 0 2.464.099 2.794.143v3.24l-1.917.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.62h-3.12V24h6.116C23.403 24 24 23.403 24 22.676V1.325C24 .597 23.403 0 22.675 0z"/></svg>
+          </a>
+        
+          <!-- Instagram -->
+          <a href="https://instagram.com/ahm09._" target="_blank" aria-label="Instagram" class="hover:text-red-400 transition">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.584.012 4.85.07 1.17.056 1.99.24 2.45.41.52.19.89.41 1.28.8.39.39.61.76.8 1.28.17.46.35 1.28.41 2.45.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.056 1.17-.24 1.99-.41 2.45-.19.52-.41.89-.8 1.28-.39.39-.76.61-1.28.8-.46.17-1.28.35-2.45.41-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.056-1.99-.24-2.45-.41-.52-.19-.89-.41-1.28-.8-.39-.39-.61-.76-.8-1.28-.17-.46-.35-1.28-.41-2.45C2.212 15.784 2.2 15.4 2.2 12s.012-3.584.07-4.85c.056-1.17.24-1.99.41-2.45.19-.52.41-.89.8-1.28.39-.39.76-.61 1.28-.8.46-.17 1.28-.35 2.45-.41C8.416 2.212 8.8 2.2 12 2.2zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+          </a>
+        
+          <!-- WhatsApp -->
+          <a href="https://wa.me/992 901503522" target="_blank" aria-label="WhatsApp" class="hover:text-red-400 transition">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 0 1-1.587-5.945C.157 5.3 5.48 0 12.02 0c3.187 0 6.167 1.24 8.413 3.488a11.822 11.822 0 0 1 3.497 8.414c-.003 6.54-5.307 11.864-11.844 11.864a11.9 11.9 0 0 1-5.936-1.57L.057 24zM6.597 19.3c1.676.995 3.276 1.591 5.42 1.593 5.448 0 9.884-4.43 9.887-9.877a9.823 9.823 0 0 0-2.933-6.949A9.86 9.86 0 0 0 12.02 2.8c-5.454 0-9.884 4.432-9.887 9.878a9.8 9.8 0 0 0 1.598 5.292l-1.04 3.83 3.906-1.5zm11.387-5.464c-.155-.256-.571-.408-1.197-.714-.626-.306-3.685-1.821-4.257-2.03-.571-.209-.987-.314-1.402.313-.415.626-1.603 2.03-1.963 2.446-.36.415-.727.466-1.352.157-.626-.309-2.662-1.232-5.066-3.933C2.709 8.717 3.8 6.542 4.22 5.915c.415-.627.209-1.152-.104-1.527C3.8 3.873 3.19 2.92 2.83 2.4c-.36-.519-.727-.447-1.152-.447-.415 0-1.096.102-1.667.723C-.462 3.197-.314 5.71 1.6 8.084c1.914 2.375 5.5 5.215 9.583 6.798 4.083 1.584 4.9 1.315 5.782 1.234.881-.081 2.777-1.134 3.17-2.229.394-1.095.394-2.038.276-2.229z"/></svg>
+          </a>
+        
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@ahm09.__" target="_blank" aria-label="TikTok" class="hover:text-red-400 transition">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.756 0h3.54c.164 2.028 1.515 3.478 3.644 3.644V7.31c-1.239.11-2.347-.123-3.54-.678v8.654c0 4.169-2.724 7.21-6.798 7.21C6.14 22.496 3 19.355 3 15.351c0-3.994 3.046-6.82 7.058-6.82.332 0 .69.024 1.004.066v3.64c-.278-.056-.523-.089-.808-.089-2.058 0-3.553 1.547-3.553 3.528 0 2.047 1.495 3.593 3.553 3.593 1.978 0 3.522-1.482 3.522-3.576V0z"/></svg>
+          </a>
+        </div>
       </div>
-      <button type="submit" class="login-btn">Login</button>
-    </form>
-    <div class="links">
-      <a href="#">Forgot password?</a> <span>or</span> <a href="#">Sign Up</a>
     </div>
-  </div>
-</div>
+  </section>
 </body>
-<script src="script.js"></script>
 </html>
